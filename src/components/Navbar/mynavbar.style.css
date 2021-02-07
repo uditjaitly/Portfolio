@@ -1,0 +1,32 @@
+.logo {
+  width: 10%;
+  color: red;
+}
+
+.nav-theme {
+  background-color: #101018f8;
+  font-size: 15px;
+}
+
+.animate-navbar {
+  box-shadow: 1px 1px 1px #222;
+  animation: moveDown 0.5s ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: red;
+}
+
+.nav-title {
+  font-family: Amatic SC;
+  font-size: larger;
+  color: orange;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
