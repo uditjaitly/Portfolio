@@ -2,6 +2,8 @@
     background-color: transparent;
     font-size: 1.1em;
     justify-items: auto ;
+    -webkit-transform: translateZ(200px); /* Equivalent or greater than parent's*/
+    transform: translateZ(200px);
   }
   
   .profile {
@@ -9,5 +11,7 @@
   }
   
   .my-details {
-    background-color: rgba(255, 255, 255, 0.747);
+    border-radius: 1rem !important;
+    background-color: rgba(255, 255, 255, 0.075);
+    opacity: 90;
   }

@@ -10,8 +10,10 @@ import Ljupyter from "../../assets/icons/jupyter.png"
 import Lnodejs from "../../assets/icons/nodejs-1.svg"
 import Lpython from "../../assets/icons/python-4.svg"
 import Lreact from "../../assets/icons/react.svg"
+import Ljavascript from "../../assets/icons/js.png"
 import Lgoogle from "../../assets/icons/google-cloud-1.svg"
 import Lkube from "../../assets/icons/kube.png"
+import LMongo from '../../assets/img/projects/mongodb.png'
 
 export const skills = {
   programming_languages: [
@@ -27,6 +29,12 @@ export const skills = {
       imgAltText: "Java",
       imgSrc: Ljava,
       skillName: "Java",
+    },
+    {
+      link: "https://www.javascript.com/",
+      imgAltText: "Javascript",
+      imgSrc: Ljavascript,
+      skillName: "JavaScript",
     },
     {
       link: "https://www.python.org/",
@@ -75,7 +83,7 @@ export const skills = {
       link: "https://reactjs.org/",
       imgAltText: "React",
       imgSrc: Lreact,
-      skillName: "React",
+      skillName: "React.js",
     },
     {
       link: "https://en.wikipedia.org/wiki/HTML",
@@ -89,6 +97,13 @@ export const skills = {
       imgSrc: Lcss,
       skillName: "CSS3",
     },
+    {
+      link: "https://www.mongodb.com/3",
+      imgAltText: "mongo",
+      imgSrc: LMongo,
+      skillName: "MongoDB",
+    },
+
   ],
   analytics_machine_learning: [
     {

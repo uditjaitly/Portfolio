@@ -1,3 +1,5 @@
+
+
 #Clouds {
   position: absolute;
   top: 0;
@@ -8,8 +10,8 @@
   height: 30%;
   overflow: hidden;
   
-  -webkit-animation: FadeIn 3s ease-out;
-          animation: FadeIn 3s ease-out;
+  -webkit-animation: FadeIn 0s ease-out;
+          animation: FadeIn 0s ease-out;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -272,13 +274,33 @@ body {
   padding-top:40px;
   min-height: 100%;
 }
-body {
-  color: #FFF;
+body.dark-mode {
+  color: white;
   background-color: #FD940A;
+/* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to left, #434343, #000000);
+  --currentColorIcon:Orange; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  --currentColorHoverIcon:Yellow;
+  --currentColorCardBody:White;
 
-  background-repeat: repeat-y;
-  background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
+}
+body.light-mode {
+  background: linear-gradient(to right, #ffe259, #ffa751);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    --currentColorIcon:#424242;
+    --currentColorHoverIcon:rgb(255, 0, 64);
+    --currentColorCardBody:Black;
+    
+
 }
 @media screen and (max-width: 768px) {
   body { padding-top: 0px; }
+}
+button {
+  z-index:5;
+  
+}
+
+h1{
+  font-family: 'Chakra Petch';
 }

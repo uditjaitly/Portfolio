@@ -7,6 +7,7 @@
   }
   
   .card-title {
+    font-family: 'Chakra Petch';
     font-size: 2em;
     font-weight: 700;
   }
@@ -25,5 +26,23 @@
     font-size: 3em;
     font-weight: 500;
     color: #ffffff;
+  }
+
+  
+  .text-dark:hover{
+    color: var(--currentColorHoverIcon) !important
+  }
+  a:link {
+    color: var(--currentColorCardBody) !important; 
+  }
+  
+  /* visited link */
+  a:visited {
+    color:var(--currentColorCardBody) !important;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--currentColorHoverIcon) !important;
   }
 

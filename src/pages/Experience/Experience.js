@@ -5,23 +5,25 @@ import {Card, CardDeck,Row,Col,Button, Accordion} from "react-bootstrap/";
 import L_MICROFOCUS from "../../assets/img/experience/microfocus.png";
 import L_OPEXGURU from "../../assets/img/experience/opexguru.png";
 import Tilt from "react-tilt";
-import "./my-experience.styles.css";
+import "./my-experience.style.css";
 
 const Experience = () => {
   return (
-    <div id="experience">
+    <div id="experience ">
       <h1 className="title text-center">EXPERIENCE</h1>
-      <Jumbotron className="jumbo-style">
+      <div className="container">
+      <Jumbotron className="jumbo-style" >
         <CardDeck>
             <Row>
             <Col md={6}>
         <Container>
           <Tilt options={{ max: 15 }}>
             <Accordion>
-            <Card>
-              <Card.Header as="h5" className="d-flex justify-content-center flex-wrap">
+            <Card style={{background:"transparent"}}>
+              <Card.Header as="h5" className="d-flex justify-content-center flex-wrap" style={{background:"white"}}>
                 <Card.Img variant="top" className="img-resize" src={L_MICROFOCUS} alt="MicroFocus logo" />
               </Card.Header>
+              <div>
               <Card.Body className="d-flex justify-content-center flex-column">
                 <div>
                   <Card.Title className="text-center">Intern - Software Development Engineer</Card.Title>
@@ -29,11 +31,14 @@ const Experience = () => {
                 <div>
                   <Card.Text className="text-center style">
                   <Card.Header>
+                  <div>
       <Accordion.Toggle as={Button} variant="link" eventKey="0">
         Job Description
       </Accordion.Toggle>
+      </div>
     </Card.Header>
     <Accordion.Collapse eventKey="0">
+      <div>
       <Card.Body>
       <Card.Text className="text-center style">
                     <strong className="body-title-style ">Intern Software Development Engineer</strong>
@@ -44,10 +49,11 @@ const Experience = () => {
                     <br/>
                     <strong> Description </strong>
                     <ul className="text-left">
-                      <li><strong>Deployed ApachePulsar </strong>   – a pub-sub messaging system on Google Cloud Platform</li>
-                      <li><strong>Evaluated </strong> performance of Pulsar deployed on multiple clusters using Grafana and Prometheus.
+                      <li><strong>Deployed ApachePulsar </strong>   on Google Cloud Platform via Google Kubernetes Engine</li>
+                      <li><strong>Programmed </strong> various Pulsar deployment YAML and realized bottlenecks using Prometheus
+
                       </li>
-                      <li><strong>Recommended </strong> out of box solutions like geo-replication and elastic file storage that improved the deployment
+                      <li><strong>Implemented </strong> out-of-box solutions such as geo-replication which reduced latency by <strong>20%</strong> and elastic file storage which conserved server costs and also accelerated IOPS by <strong>27%</strong>
                       </li>
                     
                       
@@ -57,10 +63,12 @@ const Experience = () => {
                     
                   </Card.Text>
       </Card.Body>
+      </div>
     </Accordion.Collapse>
                   </Card.Text>
                 </div>
               </Card.Body>
+              </div>
             </Card>
             </Accordion>
           </Tilt>
@@ -71,10 +79,11 @@ const Experience = () => {
         <Container>
           <Tilt options={{ max: 15 }}>
           <Accordion>
-            <Card>
-              <Card.Header as="h5" className="d-flex justify-content-center flex-wrap">
+            <Card style={{background:"transparent"}}>
+              <Card.Header as="h5" className="d-flex justify-content-center flex-wrap" style={{background:"white"}}>
                 <Card.Img variant="top" className="img-resize" src={L_OPEXGURU} alt="OpexGuru logo" />
               </Card.Header>
+              <div>
               <Card.Body className="d-flex justify-content-center flex-column">
                 <div>
                   <Card.Title className="text-center">Intern - Data Analyst</Card.Title>
@@ -87,6 +96,7 @@ const Experience = () => {
       </Accordion.Toggle>
     </Card.Header>
     <Accordion.Collapse eventKey="0">
+    <div>
       <Card.Body>
         <Card.Text className="text-center style">
                     <strong className="body-title-style ">Intern Technical Data Analyst</strong>
@@ -98,9 +108,9 @@ const Experience = () => {
                     <strong> Description </strong>
                     <ul className="text-left">
                       <li>Leveraged <strong>Data Analytics </strong> and proposed potential solutions to reduce supply chain inefficiencies</li>
-                      <li>Conducted assessments of consulting assignments to ensure better client value creation
+                      <li>Slashed client's shipping costs by <strong>13%</strong> by conducting assessments of consulting assignments
                       </li>
-                      <li>Applauded for data-driven insights that improved order cancellation metric of the key client
+                      <li>Applauded for data-driven insights that improved order cancellation metric of a key client by <strong>38%</strong>
                       </li>
                     
                       
@@ -110,10 +120,13 @@ const Experience = () => {
                     
                   </Card.Text>
                   </Card.Body>
+                  </div>
+
     </Accordion.Collapse>
                   </Card.Text>
                 </div>
               </Card.Body>
+              </div>
             </Card>
             </Accordion>
           </Tilt>
@@ -123,8 +136,9 @@ const Experience = () => {
         </Col>
         </Row>
         </CardDeck>
+       
       </Jumbotron>
-     
+      </div >
     </div>
   );
 };
